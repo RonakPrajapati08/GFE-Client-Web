@@ -53,68 +53,7 @@
 
     <!-- Start Header Top 
     ============================================= -->
-    <div class="top-bar-area bg-dark text-light inc-pad">
-        <div class="container-full">
-            <div class="row align-center">
-                <div class="col-lg-9">
-                    <div class="flex-item left">
-                        <ul>
-                            <li>
-                                <i class="fas fa-phone"></i> +91-88844-02000
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile"></i>
-                                <a href="tel:+91-97296-59891" target="_blank">+91-97296-59891</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope-open"></i>guruagro3@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 text-right">
-                    <!-- <div class="social">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
 
-                    <div class="rounded-social-buttons">
-                        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"
-                            rel="noopener"><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"
-                            rel="noopener"><i class="fab fa-twitter"></i></a>
-                        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"
-                            rel="noopener"><i class="fab fa-youtube"></i></a>
-                        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"
-                            rel="noopener"><i class="fab fa-linkedin"></i></a>
-                        <!-- <a class="social-button tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a> -->
-                        <!-- <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> -->
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- End Header Top -->
 
     <!-- Header 
@@ -165,6 +104,23 @@
                             </ul>
                         </li>
                         <li><a href="./contact.html">CONTACT US</a></li>
+                        <li class="align-content-center">
+                            <button class="agro-btn" type="submit" id="myBtn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" style="margin: 25px 15px;">
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="currentColor"
+                                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span>Enquiry</span>
+                            </button>
+                        </li>
                     </ul>
 
                 </div>
@@ -207,6 +163,95 @@
 
     </header>
     <!-- End Header -->
+
+    <script>
+        $(document).ready(function () {
+            $('#closeButton').on('click', function (e) {
+                $('#exampleModal').remove();
+            });
+        });
+    </script>
+
+    <!-- ----------------START Enquairy form----------------- -->
+
+    <div class="modal fade overflow-y-hidden" id="exampleModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content enquiry-color">
+                <div class="modal-header">
+                    <h4 class="modal-title text-white fs-2 font-bold honey" id="exampleModalLabel">Enquiry Form</h4>
+                    <!-- <button type="button" class="close border-dark-subtle border-1 px-1" data-bs-dismiss="modal" aria-label="Close"> -->
+                    <button type="button" id="closeButton" class="btn-close text-white bg-color px-2"
+                        data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+                    <!-- <span aria-hidden="true">&times;</span> -->
+                    <!-- </button> -->
+                </div>
+                <div class="modal-body">
+                    <form target="_blank" action="https://formsubmit.co/guruagro3@gmail.com" method="POST">
+                        <div class="row gy-4 gy-xl-5 p-2">
+                            <div class="col-12">
+                                <label for="fullname" class="form-label text-white font-wieght">Full Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="fullname" name="fullname" value=""
+                                    placeholder="Enter Name" required>
+                            </div>
+                            <div class="col-12 col-md-6 mt-4">
+                                <label for="email" class="form-label text-white font-wieght">Email <span
+                                        class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text font-wieght">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                        </svg>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" name="email" value=""
+                                        placeholder="Enter Email" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mt-4">
+                                <label for="phone" class="form-label text-white font-wieght">Phone Number<span
+                                        class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text font-wieght">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                        </svg>
+                                    </span>
+                                    <input type="tel" class="form-control" id="phone" name="phone" value=""
+                                        placeholder="Enter Number" required>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <label for="subject" class="form-label text-white font-wieght">Subject <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="subject" name="subject" value=""
+                                    placeholder="Enter Subject" required>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <label for="message" class="form-label text-white font-wieght">Message <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" name="message" rows="3"
+                                    placeholder="Enter Message" required></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <div class="d-grid" style="text-align: end;">
+                                    <button class="btn bg-success btn-success btn-lg" type="submit">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------END Enquairy form----------------- -->
 
 
 
@@ -714,6 +759,10 @@
     <script src="./assets/js/jquery.nice-select.min.js"></script>
     <script src="./assets/js/bootsnav.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
 
