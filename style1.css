@@ -2944,6 +2944,7 @@ body,
     background: #1f3200;
     z-index: -1;
     box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
+    border-radius: 8px;
 }
 
 .about-content-area .info h5 {
@@ -4543,7 +4544,7 @@ body,
     padding-left: 5px;
     padding-bottom: 40px;
     background: #ffffff;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     padding-right: 5px;
 }
 
@@ -6277,5 +6278,83 @@ footer.demo .copyright {
     border-color: #125688;
 }
 
+.line {
+    border-bottom: 2px solid #4b6f00;
+    border-radius: 50px;
+    width: 10rem;
+}
+.box-sedo {
+    box-shadow: rgba(185, 180, 180, 0.75) 1px 3px 6px, rgba(185, 180, 180, 0.75) 1px 3px 6px;
+    border-radius: 5px;
+    background-color: #f4fff47c;
+}
+.paragraph{
+    text-align: justify; 
+    font-size: 18px;
+}
 
+/* -------Enquiry-button-------- */
 
+.agro-btn {
+    font-family: inherit;
+    font-size: 18px;
+    background: royalblue;
+    color: white;
+    padding: 0.5em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .agro-btn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .agro-btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .agro-btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .agro-btn:hover svg {
+    transform: translateX(2em) rotate(45deg) scale(1.1);
+  }
+  
+  .agro-btn:hover span {
+    transform: translateX(5em);
+  }
+  
+  .agro-btn:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+  /* #sonali li a {
+      font-size: 18px;
+      color: rgb(0, 0, 0);
+      font-weight: 500 !important;
+  } */
+
+  .enquiry-color {
+      background-color: #1f320097;
+  }
