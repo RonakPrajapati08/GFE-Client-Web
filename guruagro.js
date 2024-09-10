@@ -27,7 +27,7 @@ prev.onclick = function () {
 
 let autoslide = setInterval(() => {
   next.click();
-}, 5000);
+}, 7000);
 
 function reloadslider() {
   let checkleft = items[active].offsetLeft;
@@ -44,3 +44,12 @@ dots.forEach((li, key) => {
     reloadslider();
   });
 });
+
+function toggleMenu() {
+  var navbarMenu = document.getElementById("navbar-menu");
+  if (navbarMenu.classList.contains("show")) {
+    navbarMenu.classList.remove("show");
+  } else {
+    navbarMenu.classList.add("show");
+  }
+}
